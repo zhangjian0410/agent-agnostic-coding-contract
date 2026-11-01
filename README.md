@@ -1,6 +1,6 @@
 # Agent-Agnostic Coding Workflow / Protocol V0
 
-**状态：V0（执行身份与交付完整性修订），限本地条件式生效。** 依据 PO Decision｜AAC · Execution Identity & Handoff Completeness Patch，经限定检查、实际只读独立复核、Finding 处置与轻量 Eval 通过，固定最终 Commit、四文件摘要并核验本地 main Fast-forward 后生效。本轮不含远端发布；GitHub 仍保留此前已发布版本。最终本地身份及检查证据见[本次 Result Package](/Users/archer/Documents/Codex/outputs/agent-agnostic-coding-contract-v0-20261101/execution-identity-handoff-patch-01/RESULT.md)。项目采用仍须分别批准。
+**状态：V0（执行身份与交付完整性修订）已完成本地生效核验，并经独立 PO 授权远端发布。** 原 PO Decision｜AAC · Execution Identity & Handoff Completeness Patch 仅批准本地实施与条件式生效，核验及候选身份保留于[原本地 Result Package](/Users/archer/Documents/Codex/outputs/agent-agnostic-coding-contract-v0-20261101/execution-identity-handoff-patch-01/RESULT.md)。后续独立发布授权已将精确候选 `49625cab3c6d5e652257c3e8e33c963ce6266925` 推送至 GitHub 私有仓库 main，并完成远端及四文件摘要回读，见[发布回执](/Users/archer/.codex/visualizations/2026/11/01/01a1959f-ad7a-7800-8690-f671a601e34e/aac-publication-receipt-49625ca.md)。项目采用仍须分别批准；远端发布和本次状态勘误均不构成 Contract GA 通过结论。
 
 本仓库是公共契约的单一维护源，Repo Owner 为 PO／Archer。公共契约只维护跨项目共性；Project Delta 在各项目内维护，任务级例外继续由有效任务授权控制。项目现行合同在明确采用前保持有效。
 
@@ -14,7 +14,7 @@
 
 ## 使用边界
 
-本修订已获 PO 本地实施与条件式生效批准；完成最终核验后，以 Result Package 中的完整 Commit 和四文件 SHA-256 固定本地版本。远端发布须由 PO 根据精确候选另行批准。后续公共版本仍须由 PO 明确批准并固定。阅读本仓库、出现本地 Commit、分支名称或文档检查通过，不产生实施、Review、集成、发布或项目采用权限。实际任务仍核对已采用公共版本、项目 Delta 和有效任务授权。
+本地生效与远端发布分别依据原实施授权和后续精确候选发布授权，原授权边界及历史记录保持不变。本次只勘误版本状态和来源引用；勘误 Commit 不产生新的公共规则，不改变任何项目的固定采用版本。后续公共版本仍须由 PO 明确批准并固定。阅读本仓库、出现本地 Commit、分支名称或文档检查通过，不产生实施、Review、集成、发布或项目采用权限。实际任务仍核对已采用公共版本、项目 Delta 和有效任务授权。
 
 本次仅落地上述公共契约及来源说明。项目 Delta 正文、项目入口及采用记录未修改；原 14 文件工程方案保持暂停。这里不包含 Schema、通用校验器、自动化测试框架、Runtime Profile 或执行引擎，也不声称跨 Harness 加载验证通过。
 
