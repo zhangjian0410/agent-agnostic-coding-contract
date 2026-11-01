@@ -1,6 +1,6 @@
 # Version & Provenance
 
-**状态：首个公共有效 V0。** 本次 PO 已批准最小 Git 集成及条件式版本生效；最终 Commit、四文件摘要、实际差异、工作区和分支状态全部核验通过后，以 Result Package 记录的完整 Commit 识别本版本。 本文件记录来源和维护机制，不建立第二份项目 Delta、任务规格或 Finding 真源。
+**状态：公共有效 V0（HE-01 修订）。** 本次 PO 已批准 HE-01 最小修订及条件式版本生效；最终 Commit、四文件摘要、实际差异、工作区和分支状态全部核验通过后，以 Result Package 记录的完整 Commit 识别本版本。 本文件记录来源和维护机制，不建立第二份项目 Delta、任务规格或 Finding 真源。
 
 ## 设计及落地依据
 
@@ -13,6 +13,7 @@
 | PO Repair Return 补充 | message msg_01a194e8-5c84-7480-925a-9aa0ef259e01；已纳入批准正文 P-05 |
 | 本次四文档落地授权 | message msg_01a19511-bc09-7450-9b23-c9b16ba49159；AAC-V0-DOCS-AUTH-01 |
 | PO 最小 Git 集成与版本生效批准 | message msg_01a1951e-96e9-7c23-86cb-4fcb1bbce7a1；PO Decision｜AAC-V0 · Main Integration & Version Activation；最终身份及检查回执保存于原 Result Package |
+| PO HE-01 最小修订及版本生效批准 | message msg_01a19549-b53a-7f73-a96b-0e1dbb7ecb56；PO Decision｜AAC-V0 · HE-01 Minimal Patch & Activation；固定基线 0fe6b520ebb089b7402827f1c0015c63e8e8b1ef；仅 P-07 Recovery Return 正文及必要版本说明 |
 
 原生记录、完整批准原话及快照绑定保存在 [本任务 SOURCE-BINDINGS.json](/Users/archer/Documents/Codex/outputs/agent-agnostic-coding-contract-v0-20261101/minimal-docs-01/SOURCE-BINDINGS.json)。这是本机证据路径，其他环境不可访问时保留证据缺口，不把路径本身当作核验结果。
 
@@ -34,7 +35,7 @@
 | P-04 | 两项目验证合同及 V0 R1：Review 是否必需、层次和独立性沿有效项目／任务合同 |
 | P-05 | PO Repair Return 补充及既有 Repair-to-Review Fast Path |
 | P-06 | 两项目预算约束及已批准预算合同 |
-| P-07 | 两项目证据判定、历史兼容性和已批准 ADP |
+| P-07 | 两项目证据判定、历史兼容性和已批准 ADP；本次 PO 批准的 HE-01 Recovery Return 补充 |
 
 Project Delta 划分与差异分析保留在 [已批准 ADP 原文第三部分](/Users/archer/Documents/Codex/outputs/agent-agnostic-coding-contract-v0-20261101/minimal-docs-01/inputs/approved_adp.md)。项目内维护自身 Delta，公共仓库不复制其现行规则正文。童迹 C 的单 Reviewer、禁子审、Manifest 候选及外部 Receipt 接受等继续沿任务级合同，不提升为所有童迹任务默认值。
 
@@ -48,6 +49,8 @@ Project Delta 划分与差异分析保留在 [已批准 ADP 原文第三部分](
 6. **来源与未知。** 区分项目原条款、PO 决定和公共抽象。历史 Workflow origin 无法证实则保持 UNKNOWN，不能用 OpenSpec 工具版本推断。
 
 ## 历史与证据边界
+
+本次 HE-01 修订仅在 P-07 增加有条件触发的 Recovery Return，并更新必要版本与批准说明。WORKFLOW 及 P-01 至 P-06 保持基线字节。以下首段保留初始 V0 落地时的历史范围，不作为本次 PROTOCOL 未变的声明。
 
 本次只把已批准文字落地，WORKFLOW 和 PROTOCOL 正文逐段保留批准原文，仅增加文档标题。旧 14 文件工程草稿、AC、BLOCKED、Receipt 02、权限预检、UNKNOWN、Review 与预算记录均为历史证据，未被本次落地覆盖或重新裁决。未实施 Schema、校验器、自动化测试、Runtime Profile、跨项目接入、正式 Review 或项目采用。
 
