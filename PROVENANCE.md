@@ -1,6 +1,6 @@
 # Version & Provenance
 
-**状态：文档候选，公共版本尚未批准生效。** 本文件记录来源和维护机制，不建立第二份项目 Delta、任务规格或 Finding 真源。
+**状态：首个公共有效 V0。** 本次 PO 已批准最小 Git 集成及条件式版本生效；最终 Commit、四文件摘要、实际差异、工作区和分支状态全部核验通过后，以 Result Package 记录的完整 Commit 识别本版本。 本文件记录来源和维护机制，不建立第二份项目 Delta、任务规格或 Finding 真源。
 
 ## 设计及落地依据
 
@@ -12,6 +12,7 @@
 | PO Architecture Closure | message msg_01a1950c-6e53-7c70-820d-0c44a8126ebe；确认两份公共契约、Delta 划分及版本治理，未恢复原 P1 |
 | PO Repair Return 补充 | message msg_01a194e8-5c84-7480-925a-9aa0ef259e01；已纳入批准正文 P-05 |
 | 本次四文档落地授权 | message msg_01a19511-bc09-7450-9b23-c9b16ba49159；AAC-V0-DOCS-AUTH-01 |
+| PO 最小 Git 集成与版本生效批准 | message msg_01a1951e-96e9-7c23-86cb-4fcb1bbce7a1；PO Decision｜AAC-V0 · Main Integration & Version Activation；最终身份及检查回执保存于原 Result Package |
 
 原生记录、完整批准原话及快照绑定保存在 [本任务 SOURCE-BINDINGS.json](/Users/archer/Documents/Codex/outputs/agent-agnostic-coding-contract-v0-20261101/minimal-docs-01/SOURCE-BINDINGS.json)。这是本机证据路径，其他环境不可访问时保留证据缺口，不把路径本身当作核验结果。
 
@@ -39,8 +40,8 @@ Project Delta 划分与差异分析保留在 [已批准 ADP 原文第三部分](
 
 ## 最小版本与采用机制
 
-1. **唯一权威。** 独立私有 agent-agnostic-coding-contract Repo 持有公共 WORKFLOW 与 PROTOCOL，PO／Archer 负责版本批准。当前只形成文档候选，项目现行合同继续有效。
-2. **固定版本。** 用 PO 明确批准的完整 Commit 和内容摘要识别公共版本。项目持有固定快照及版本引用，不跟随 latest；快照是分发副本，不在项目内另改公共正文。当前候选的摘要清单由 Result Package 保存，不新增机器接口或发布机制。
+1. **唯一权威。** 独立私有 agent-agnostic-coding-contract Repo 持有公共 WORKFLOW 与 PROTOCOL，PO／Archer 负责版本批准。本次批准仅使独立 Repo 中的公共 V0 在最终核验通过后生效，项目现行合同继续有效。
+2. **固定版本。** 用 PO 明确批准的完整 Commit 和内容摘要识别公共版本。项目持有固定快照及版本引用，不跟随 latest；快照是分发副本，不在项目内另改公共正文。本有效版本的摘要清单由 Result Package 保存，不新增机器接口或发布机制。
 3. **Delta 只写差异。** 项目记录所针对的公共版本／条款、保留或收紧内容、原因和批准来源；入口引用公共合同、Delta 和任务授权，不重复公共规则。任务级例外继续由有效任务授权控制。
 4. **受控升级。** 公共变更说明条款差异、兼容性和受影响项目。项目核对本地 Delta 后决定采用，记录批准及适用新任务起点；公共更新不自动升级项目或迁移在途任务。
 5. **防止漂移。** 在采用、升级和实际任务交接时核对固定引用与 Delta。冲突只处理受影响部分；共同修订回公共源，项目特例留 Delta。沿既有任务记录留证，不另建平台、定期强制 Review 或新增质量门禁。
