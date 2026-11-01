@@ -15,6 +15,22 @@
 - Source Baseline、Dispatch HEAD、候选及输入身份；
 - 必要检查、适用 Review、预算累计、停止条件和回传位置。
 
+执行配置按三个时点区分：
+
+- Prepare / Handoff：Planner 提供推荐的 Coding Agent、Runtime、Model 及必要的 Reasoning Effort，区分推荐值与 PO 已批准值并引用批准来源；尚不能确定时提供候选范围及待裁决事项。不要求预先取得尚未创建的 Session ID。
+- PO Dispatch：PO 明确批准的执行配置或允许范围、Implementation Owner、授权动作及停止条件。Planner 的推荐不自动构成批准。
+- Implementation Receipt：接收者核验实际 Coding Agent、Runtime、Model、Session、权限、工作区和有效授权，记录身份来源并核对批准约束，包括受约束的 Reasoning Effort。不符合批准约束时返回 BLOCKED，不自行更换受限制的配置。
+
+Planner 返回 DISPATCH READY 时，同时提供：
+
+1. Ready Report：准备完成及核验依据。
+2. Launch Packet：完整、固定、可追溯的下游任务输入。
+3. PO Dispatch Draft：PO 可直接复制转发的最小授权草稿。
+
+Draft 可放在 Ready Report 回复末尾或现有 Launch Packet 内，不强制新增文件；仅包含接收者、待批准动作、固定 Handoff 引用和必要限制，不重复技术规格、预算明细与项目规则；预算和停止条件可引用固定 Launch Packet，不重复维护。Draft 明确标记 DRAFT / NOT DISPATCHED，不产生授权；只有 PO 审阅批准并实际发送后才构成 Dispatch。
+
+尚未生成的 Session ID 不阻断 Prepare。接收者仍待指定时应如实标记，实际绑定后更新受影响的 Draft，不虚构身份；实际 Dispatch 时仍须明确接收者及批准配置。
+
 接收者核对实际状态后返回 ACCEPTED 或 BLOCKED。**谁有权接受 Receipt，由有效项目／任务合同决定**；公共层同时容纳接收者接受和指定外部责任方接受，不统一改写为自接受。
 
 **P-03｜候选身份**
@@ -35,7 +51,11 @@ Source Baseline 是判断累计变更范围的固定来源；Dispatch HEAD 是�
 - **披露式独立 Review**：披露已知 Finding 或修复声明，Reviewer 仍独立核验。
 - **定向复审**：围绕指定 Finding、变更和受影响回归复核，同时满足原合同仍要求的检查。
 
-记录实际身份、输入、权限、覆盖和限制。角色名、工具名或新会话本身不能代替证据。亲自执行、引用日志、待验证主张分别标记；未知身份、成本和未运行检查如实保留。
+执行身份追溯适用于 Planner、Implementation Owner、Reviewer 等实际执行角色。统一记录实际 Agent、Runtime、Model、Session、适用的 Reasoning Effort、输入、权限、覆盖和限制。身份字段按证据区分原生核验、可靠引用、执行者自报与 UNKNOWN，保留可定位来源及限制；推荐值、批准值或配置声明不冒充实际运行证据。角色名、工具名或新会话本身不能代替证据。亲自执行、引用日志、待验证主张分别标记；未知身份、成本和未运行检查如实保留。
+
+Session 优先记录原生 ID 及来源；不具备原生 ID 时，允许使用可靠的 Task / Conversation 引用，不要求 Codex 式 Session UUID。无可靠来源时保留 UNKNOWN，依据有效任务的身份与独立性要求判断能否继续；必要条件无法核验时返回 BLOCKED。Session ID 不等同于 Implementation Owner，也不自动产生授权。
+
+Agent、Runtime、Model、Session 或受约束的 Reasoning Effort 发生变化时，在现有任务记录中增量记录变更前后真实身份、来源、执行区间及授权影响，保留历史。原授权仍有效且实际条件满足时，仅补受影响核验；超出授权范围时停止受影响动作并取得必要批准，不默认完整 Prepare。预算仍按 P-06 累计；Review 的独立性及会话策略仍沿有效项目／任务合同。
 
 **P-05｜Repair Return**
 

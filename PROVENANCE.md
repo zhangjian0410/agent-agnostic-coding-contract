@@ -1,10 +1,10 @@
 # Version & Provenance
 
-**状态：公共有效 V0（HE-01 修订）。** 本次 PO 已批准 HE-01 最小修订及条件式版本生效；最终 Commit、四文件摘要、实际差异、工作区和分支状态全部核验通过后，以 Result Package 记录的完整 Commit 识别本版本。 本文件记录来源和维护机制，不建立第二份项目 Delta、任务规格或 Finding 真源。
+**状态：V0（执行身份与交付完整性修订），限本地条件式生效。** 本次 PO 批准限定实施、检查、实际只读独立复核、Finding 处置、轻量 Eval、本地 Commit 和符合条件的 main Fast-forward。全部条件核验通过后，以[本次 Result Package](/Users/archer/Documents/Codex/outputs/agent-agnostic-coding-contract-v0-20261101/execution-identity-handoff-patch-01/RESULT.md)记录的完整 Commit 和四文件摘要识别本地版本；远端未发布，GitHub 不因本地集成更新。本文件记录来源和维护机制，不建立第二份项目 Delta、任务规格或 Finding 真源。
 
 ## 设计及落地依据
 
-当前会话：01a194c1-0f2f-7571-8407-1fae97343b1a。
+初始 V0／HE-01 建设会话：01a194c1-0f2f-7571-8407-1fae97343b1a。本次修订维护会话：01a1959f-ad7a-7800-8690-f671a601e34e。
 
 | 依据 | 固定记录 |
 |---|---|
@@ -14,8 +14,9 @@
 | 本次四文档落地授权 | message msg_01a19511-bc09-7450-9b23-c9b16ba49159；AAC-V0-DOCS-AUTH-01 |
 | PO 最小 Git 集成与版本生效批准 | message msg_01a1951e-96e9-7c23-86cb-4fcb1bbce7a1；PO Decision｜AAC-V0 · Main Integration & Version Activation；最终身份及检查回执保存于原 Result Package |
 | PO HE-01 最小修订及版本生效批准 | message msg_01a19549-b53a-7f73-a96b-0e1dbb7ecb56；PO Decision｜AAC-V0 · HE-01 Minimal Patch & Activation；固定基线 0fe6b520ebb089b7402827f1c0015c63e8e8b1ef；仅 P-07 Recovery Return 正文及必要版本说明 |
+| PO 执行身份与交付完整性修订批准 | message msg_01a19628-7fa8-7622-b595-6c31d346a3a0；PO Decision｜AAC · Execution Identity & Handoff Completeness Patch；固定基线 0f5e9f4f89631163fe5c62c1efe59590667dac73；仅 P-02、P-04 及必要版本说明，35 分钟独立任务额度；只授权本地集成与条件式生效 |
 
-原生记录、完整批准原话及快照绑定保存在 [本任务 SOURCE-BINDINGS.json](/Users/archer/Documents/Codex/outputs/agent-agnostic-coding-contract-v0-20261101/minimal-docs-01/SOURCE-BINDINGS.json)。这是本机证据路径，其他环境不可访问时保留证据缺口，不把路径本身当作核验结果。
+初始 V0 的原生记录、完整批准原话及快照绑定保存在 [初始任务 SOURCE-BINDINGS.json](/Users/archer/Documents/Codex/outputs/agent-agnostic-coding-contract-v0-20261101/minimal-docs-01/SOURCE-BINDINGS.json)。这是本机证据路径，其他环境不可访问时保留证据缺口，不把路径本身当作核验结果。
 
 ## 项目来源与提炼映射
 
@@ -49,6 +50,10 @@ Project Delta 划分与差异分析保留在 [已批准 ADP 原文第三部分](
 6. **来源与未知。** 区分项目原条款、PO 决定和公共抽象。历史 Workflow origin 无法证实则保持 UNKNOWN，不能用 OpenSpec 工具版本推断。
 
 ## 历史与证据边界
+
+本次修订在 P-02 统一执行配置三个时点及 DISPATCH READY 三项交付，在 P-04 明确全部实际执行角色的身份来源和配置变更追溯。WORKFLOW 及 P-01、P-03、P-05 至 P-07 保持上述基线原字节。原生批准、实际 Diff、只读 Review、Eval、最终本地候选和预算保存在本次 Result Package。First Review／Re-review 策略保持有效项目／任务合同；B1 不追补历史 Draft、不重复派发；B2 下一次有效 Ready 的三项交付沿 PO 任务决定落实。项目现行授权、Receipt、预算及候选不变，新公共修订不自动被项目采用。
+
+以下两段保留 HE-01 及初始 V0 的历史范围说明，其中“本次”指各自历史阶段，不作为当前修订范围声明。
 
 本次 HE-01 修订仅在 P-07 增加有条件触发的 Recovery Return，并更新必要版本与批准说明。WORKFLOW 及 P-01 至 P-06 保持基线字节。以下首段保留初始 V0 落地时的历史范围，不作为本次 PROTOCOL 未变的声明。
 
