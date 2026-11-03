@@ -31,13 +31,13 @@ Draft 可放在 Ready Report 回复末尾或现有 Launch Packet 内，不强制
 
 尚未生成的 Session ID 不阻断 Prepare。接收者仍待指定时应如实标记，实际绑定后更新受影响的 Draft，不虚构身份；实际 Dispatch 时仍须明确接收者及批准配置。
 
-凡现行 Workflow 中需要 PO 裁决并向下游 Agent 转发的交接，**交出本次结果的责任方必须在正常交付时，随现有交付物附上完整、最小、可直接转发的 PO Decision / Dispatch Draft**。Draft 写明接收角色、待批准动作、固定输入或候选、适用配置及必要限制。已有规格、证据、预算、停止条件和回传位置可用固定引用。确需 PO 选择时，上游列明选项和建议，PO 选定后由上游补齐受影响的正文。PO 只需审阅、批准和转发，无需编写 Prompt、补配参数或整理证据。
+凡现行 Workflow 中需要 PO 决策或向下游 Agent 转发的交接，**交出本次结果的责任方必须在正常交付时，随现有交付物附上完整、最小、可直接转发的 PO Decision / Dispatch Draft**。Draft 写明接收角色、待批准动作、固定输入或候选、适用配置及必要限制。已有规格、证据、预算、停止条件和回传位置可用固定引用。确需 PO 选择时，上游列明选项和建议，PO 选定后由上游补齐受影响的正文。PO 只需审阅、批准和转发，无需编写 Prompt、补配参数或整理证据。
 
 - **Planner** 在 Plan 交付中附下一步 Prepare 的 Decision Draft。在 `DISPATCH READY` 时沿用现有 Ready Report、Launch Packet 和实施 Dispatch Draft。需要独立 Review 时，由 Planner 给出 Reviewer 配置建议或待选范围，区分推荐值与 PO 已批准值。
 - **Implementation Owner** 在 Result Package 中附首次送审 Draft。修复或补证后需要 PO 转交复核时，随同一次交付附复审 Draft，绑定实际候选、原 Finding 和相应证据。Reviewer 配置只引用 Planner 的建议或 PO 已批准的配置与来源，Implementation 不得自行选定或更换。Implementation 沿用既定 Review 计划，不重新规划 Review；配置或计划存在缺口时，列明待裁决事项并交回 Planner／PO。
 - **Independent Reviewer** 在 Review Report 中附与结论相符的下一步 Draft。需要修复时引用 P-05 Repair Return，需要补证或恢复时引用已有的 P-07 Recovery Return；可接受且需下游集成或收尾时，给出供 PO 裁决的相应草稿。Reviewer 不得自行批准修复或集成。其他角色在 Receipt 等现有载体中触发同类交接时，由交出方随附 Draft。
 
-集成及收尾责任方在需要 PO 决定并向下游转发时，随现有交付附下一步授权草稿，绑定实际集成结果、交付证据及待批准动作。
+集成及收尾责任方在需要 PO 决策或向下游转发时，随现有交付附下一步授权草稿，绑定实际集成结果、交付证据及待批准动作。
 
 适用时，Draft 附经核验的 Agent 启动命令，注明目标工作区、执行配置、输入入口及核验依据与限制。命令应与推荐或已批准配置一致；参数核验与实际启动验证分别说明。无法核实时由上游说明缺口并补齐，不要求 PO 编写命令或补配技术参数。
 
