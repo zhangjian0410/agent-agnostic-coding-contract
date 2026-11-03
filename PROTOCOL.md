@@ -31,6 +31,14 @@ Draft 可放在 Ready Report 回复末尾或现有 Launch Packet 内，不强制
 
 尚未生成的 Session ID 不阻断 Prepare。接收者仍待指定时应如实标记，实际绑定后更新受影响的 Draft，不虚构身份；实际 Dispatch 时仍须明确接收者及批准配置。
 
+凡现行 Workflow 中需要 PO 裁决并向下游 Agent 转发的交接，**交出本次结果的责任方必须在正常交付时，随现有交付物附上完整、最小、可直接转发的 PO Decision / Dispatch Draft**。Draft 写明接收角色、待批准动作、固定输入或候选、适用配置及必要限制。已有规格、证据、预算、停止条件和回传位置可用固定引用。确需 PO 选择时，上游列明选项和建议，PO 选定后由上游补齐受影响的正文。PO 只需审阅、批准和转发，无需编写 Prompt、补配参数或整理证据。
+
+- **Planner** 在 Plan 交付中附下一步 Prepare 的 Decision Draft。在 `DISPATCH READY` 时沿用现有 Ready Report、Launch Packet 和实施 Dispatch Draft。需要独立 Review 时，由 Planner 给出 Reviewer 配置建议或待选范围，区分推荐值与 PO 已批准值。
+- **Implementation Owner** 在 Result Package 中附首次送审 Draft。修复或补证后需要 PO 转交复核时，随同一次交付附复审 Draft，绑定实际候选、原 Finding 和相应证据。Reviewer 配置只引用 Planner 的建议或 PO 已批准的配置与来源，Implementation 不得自行选定或更换。
+- **Independent Reviewer** 在 Review Report 中附与结论相符的下一步 Draft。需要修复时引用 P-05 Repair Return，需要补证或恢复时引用已有的 P-07 Recovery Return；可接受且需下游集成或收尾时，给出供 PO 裁决的相应草稿。Reviewer 不得自行批准修复或集成。其他角色在 Receipt 等现有载体中触发同类交接时，由交出方随附 Draft。
+
+Draft 标记 `DRAFT / NOT DISPATCHED`。PO 审阅批准并实际转发后，下游才按有效合同接收。已有授权足以继续、无需 PO 再次派发的动作，沿原授权执行。
+
 接收者核对实际状态后返回 ACCEPTED 或 BLOCKED。**谁有权接受 Receipt，由有效项目／任务合同决定**；公共层同时容纳接收者接受和指定外部责任方接受，不统一改写为自接受。
 
 **P-03｜候选身份**
