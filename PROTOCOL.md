@@ -15,6 +15,10 @@
 - Source Baseline、Dispatch HEAD、候选及输入身份；
 - 必要检查、适用 Review、预算累计、停止条件和回传位置。
 
+项目通用合同（如 AGENTS.md、通用 IMPLEMENTATION_HANDOFF.md 和 Project Delta）定义项目共性规则、字段及检查要求，不登记具体任务的 Worktree 名称、实际路径、分支和 Owner。这些任务事实在既有 Issue／Ticket 或获批任务执行回执中选定一处作为唯一权威登记位置；不要求新建登记系统。项目级路径约定和字段模板可保留在通用合同中，并与单次任务实际值区分。创建功能 Worktree 或变更任务 Owner 本身不要求改写通用合同。
+
+交接包、Receipt、检查和结果报告引用该唯一登记位置；可记录核验时的实际路径、HEAD、Owner 等带时点的状态作为证据，不另建可独立维护的任务登记。
+
 执行配置按三个时点区分：
 
 - Prepare / Handoff：Planner 提供推荐的 Coding Agent、Runtime、Model 及必要的 Reasoning Effort，区分推荐值与 PO 已批准值并引用批准来源；尚不能确定时提供候选范围及待裁决事项。不要求预先取得尚未创建的 Session ID。
